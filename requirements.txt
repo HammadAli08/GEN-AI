@@ -10,3 +10,4 @@ pypdf
 python-dotenv
 pandas
 ipykernel
+pymupdf
