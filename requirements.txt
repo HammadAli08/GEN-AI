@@ -11,3 +11,7 @@ python-dotenv
 pandas
 ipykernel
 pymupdf
+python-docx
+docx2txt
+matplotlib
+langchain-huggingface
