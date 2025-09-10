@@ -1,26 +1,24 @@
 # 📘 RAG (Retrieval-Augmented Generation)
 
-This repository contains a simple implementation of **Retrieval-Augmented Generation (RAG)**.  
-RAG combines **information retrieval** with **large language models (LLMs)** to produce more accurate, context-aware answers.
+This repository contains my implementation of **Retrieval-Augmented Generation (RAG)**.  
+It combines document retrieval with LLMs to answer questions using external knowledge.
 
 ---
 
-## 🚀 What is RAG?
-At a high level:
-1. **Document Loading** – Bring in external knowledge (PDFs, text files, databases, etc.).
-2. **Chunking** – Break documents into smaller pieces so they can be efficiently searched.
-3. **Embedding** – Convert chunks into vector representations using an embedding model.
-4. **Vector Store** – Save embeddings in a vector database (e.g., FAISS, Chroma, Pinecone).
-5. **Retrieval** – Fetch the most relevant chunks when a query is asked.
-6. **LLM Generation** – Pass both the query and retrieved chunks into an LLM to generate a grounded, contextual answer.
+## ⚡ Workflow
+1. **Load PDFs / Documents** – Extract text and metadata.  
+2. **Chunking** – Split documents into smaller pieces for efficient retrieval.  
+3. **Embeddings** – Convert chunks into vector embeddings using a transformer model.  
+4. **Vector Store** – Store embeddings in FAISS for similarity search.  
+5. **Retrieval + Generation** – Retrieve relevant chunks and pass them to an LLM for contextual answers.
 
 ---
 
-## 📂 Basic Steps in This Repo
+## 🛠️ Usage
 
-### 1. Load Data
-```python
-from langchain.document_loaders import PyPDFLoader
+### 1. Clone the repo
+```bash
+git clone https://github.com/your-username/RAG.git
+cd RAG
 
-loader = PyPDFLoader("your_file.pdf")
-documents = loader.load()
+
