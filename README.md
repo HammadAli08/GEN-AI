@@ -19,33 +19,7 @@ It demonstrates how to build scalable and interpretable AI systems with structur
 
 ---
 
-GEN-AI/
-│
-├── 0-Data Ingestion and Parsing/
-│   ├── data_parsing_pdf.ipynb
-│   ├── Hybrid Retriver.ipynb
-│   └── chroma-db/
-│
-├── Langchain/
-│   ├── simple_chain.py
-│   ├── parallel_chains.py
-│   ├── conditional_chains.py
-│   └── chatbot.py
-│
-├── LangGraph/
-│   ├── Simple_LangGraph.ipynb
-│   └── LLM_Powered_LangGraph.ipynb
-│
-├── Projects/
-│   └── AI_Powered_LangGraph.ipynb
-│
-├── Vector Embedding and Databases/
-│   └── Embeddings.ipynb
-│
-├── main.py
-├── pyproject.toml
-├── requirements.txt
-└── README.md
+<pre> GEN-AI/ │ ├── 0-Data Ingestion and Parsing/ │ ├── data_parsing_pdf.ipynb │ ├── Hybrid Retriver.ipynb │ └── chroma-db/ │ ├── Langchain/ │ ├── simple_chain.py │ ├── parallel_chains.py │ ├── conditional_chains.py │ └── chatbot.py │ ├── LangGraph/ │ ├── Simple_LangGraph.ipynb │ └── LLM_Powered_LangGraph.ipynb │ ├── Projects/ │ └── AI_Powered_LangGraph.ipynb │ ├── Vector Embedding and Databases/ │ └── Embeddings.ipynb │ ├── main.py ├── pyproject.toml ├── requirements.txt └── README.md </pre>
 
 
 
