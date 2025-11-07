@@ -1,24 +1,81 @@
-# 📘 RAG (Retrieval-Augmented Generation)
-
-This repository contains my implementation of **Retrieval-Augmented Generation (RAG)**.  
-It combines document retrieval with LLMs to answer questions using external knowledge.
+# GEN-AI 🚀
+**An end-to-end framework for building intelligent, modular, and production-ready AI systems using LangChain, LangGraph, and Retrieval-Augmented Generation (RAG).**
 
 ---
 
-## ⚡ Workflow
-1. **Load PDFs / Documents** – Extract text and metadata.  
-2. **Chunking** – Split documents into smaller pieces for efficient retrieval.  
-3. **Embeddings** – Convert chunks into vector embeddings using a transformer model.  
-4. **Vector Store** – Store embeddings in FAISS for similarity search.  
-5. **Retrieval + Generation** – Retrieve relevant chunks and pass them to an LLM for contextual answers.
+## 🧠 Overview
+GEN-AI is a hands-on project focused on **RAG pipelines**, **LangChain workflows**, and **AI agent orchestration**.  
+It demonstrates how to build scalable and interpretable AI systems with structured logic, modular design, and custom retrievers.
 
 ---
 
-## 🛠️ Usage
+## ⚙️ Key Features
+- **Retrieval-Augmented Generation (RAG)** — Ingestion, chunking, embedding, and hybrid vector search.  
+- **LangChain & LangGraph Workflows** — Sequential, parallel, and conditional chain execution.  
+- **AI Agents** — Custom logic agents and ReAct-style reasoning loops.  
+- **Vector Databases** — Integrations with Chroma, FAISS, and OpenSearch.  
+- **Structured Outputs** — Pydantic-based output formatting and validation.  
+- **Interactive Notebooks** — Ready-to-run Jupyter notebooks for experiments.  
 
-### 1. Clone the repo
+---
+
+## 🧩 Project Structure
+GEN-AI/
+│
+├── 0-Data Ingestion and Parsing/
+│ ├── data_parsing_pdf.ipynb
+│ ├── Hybrid Retriver.ipynb
+│ └── chroma-db/
+│
+├── Langchain/
+│ ├── simple_chain.py
+│ ├── parallel_chains.py
+│ ├── conditional_chains.py
+│ └── chatbot.py
+│
+├── LangGraph/
+│ ├── Simple_LangGraph.ipynb
+│ └── LLM_Powered_LangGraph.ipynb
+│
+├── Projects/
+│ └── AI_Powered_LangGraph.ipynb
+│
+├── Vector Embedding and Databases/
+│ └── Embeddings.ipynb
+│
+├── main.py
+├── pyproject.toml
+├── requirements.txt
+└── README.md
+
+yaml
+Copy code
+
+---
+
+## 🛠️ Tech Stack
+- **Python 3.13**
+- **LangChain**
+- **LangGraph**
+- **Chroma / FAISS / OpenSearch**
+- **Pydantic**
+- **Jupyter Notebooks**
+- **OpenAI / Hugging Face APIs**
+
+---
+
+## 🚀 Setup Instructions
 ```bash
-git clone https://github.com/your-username/RAG.git
-cd RAG
+# Clone the repository
+git clone https://github.com/HammadAli08/GEN-AI.git
+cd GEN-AI
 
+# (Optional) create virtual environment
+python -m venv venv
+source venv/bin/activate   # On Windows: venv\Scripts\activate
 
+# Install dependencies
+pip install -r requirements.txt
+
+# Run main script
+python main.py
